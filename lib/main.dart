@@ -10,8 +10,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.pink,
+        appBarTheme: AppBarTheme(backgroundColor: Colors.lightBlue[100]),
+        scaffoldBackgroundColor: Colors.blue[50],
+      ),
       home: HomePage(),
     );
   }
